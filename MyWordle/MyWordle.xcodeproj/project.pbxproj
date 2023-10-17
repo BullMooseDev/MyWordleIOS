@@ -15,6 +15,7 @@
 		0F4ACF522ADF2EAF0053DD55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4ACF502ADF2EAF0053DD55 /* LaunchScreen.storyboard */; };
 		0F4ACF5E2ADF2F510053DD55 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4ACF5D2ADF2F510053DD55 /* KeyboardViewController.swift */; };
 		0F4ACF602ADF2F6C0053DD55 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4ACF5F2ADF2F6C0053DD55 /* BoardViewController.swift */; };
+		0F4ACF622ADF33D10053DD55 /* KeyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4ACF612ADF33D10053DD55 /* KeyCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0F4ACF532ADF2EAF0053DD55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F4ACF5D2ADF2F510053DD55 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		0F4ACF5F2ADF2F6C0053DD55 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		0F4ACF612ADF33D10053DD55 /* KeyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				0F4ACF492ADF2EAE0053DD55 /* ViewController.swift */,
 				0F4ACF5D2ADF2F510053DD55 /* KeyboardViewController.swift */,
 				0F4ACF5F2ADF2F6C0053DD55 /* BoardViewController.swift */,
+				0F4ACF612ADF33D10053DD55 /* KeyCell.swift */,
 			);
 			path = CoreCode;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				0F4ACF4A2ADF2EAE0053DD55 /* ViewController.swift in Sources */,
 				0F4ACF462ADF2EAE0053DD55 /* AppDelegate.swift in Sources */,
 				0F4ACF482ADF2EAE0053DD55 /* SceneDelegate.swift in Sources */,
+				0F4ACF622ADF33D10053DD55 /* KeyCell.swift in Sources */,
 				0F4ACF5E2ADF2F510053DD55 /* KeyboardViewController.swift in Sources */,
 				0F4ACF602ADF2F6C0053DD55 /* BoardViewController.swift in Sources */,
 			);
