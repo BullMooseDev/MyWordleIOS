@@ -15,7 +15,7 @@ class BoardViewController: UIViewController, UICollectionViewDelegateFlowLayout,
    
     var dataSource: BoardViewControllerDataSource?
     
-        let collectionView: UICollectionView = {
+    private let collectionView: UICollectionView = {
             let layout = UICollectionViewFlowLayout()
             layout.minimumInteritemSpacing = 4
             let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -23,7 +23,7 @@ class BoardViewController: UIViewController, UICollectionViewDelegateFlowLayout,
             collectionView.backgroundColor = .black
             collectionView.register(KeyCell.self, forCellWithReuseIdentifier: KeyCell.identifier)
             return collectionView
-        }()
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +40,10 @@ class BoardViewController: UIViewController, UICollectionViewDelegateFlowLayout,
             collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 30),
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
             ])
+        }
+    
+    public func reloadData() {
+        collectionView.reloadData()
         }
     }
 
@@ -62,6 +66,11 @@ class BoardViewController: UIViewController, UICollectionViewDelegateFlowLayout,
             cell.layer.borderWidth = 1
             cell.layer.borderColor = UIColor.black.cgColor
             cell.layer.cornerRadius = 4
+            
+            let guesses = dataSource?.currentGuesses ?? []
+            if let letter = guesses[indexPath.section][indexPath.row] {
+                cell.configureWithLetter(with: letter)
+            }
             
             return cell
         }

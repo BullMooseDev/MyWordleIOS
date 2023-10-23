@@ -54,7 +54,23 @@ class ViewController: UIViewController {
 
 extension ViewController: KeyboardViewControllerDelegate {
     func KeyboardViewController(_ vc: KeyboardViewController, didTapKey letter: Character) {
-        print(letter)
+        // Update guesses
+        var stop = false
+        for i in 0..<guesses.count {
+            for j in 0..<guesses[i].count {
+                if guesses[i][j] == nil {
+                    guesses[i][j] = letter
+                    stop = true
+                    break
+                }
+            }
+            
+            if stop {
+                break
+            }
+        }
+        
+        boardVC.reloadData()
     }
 }
 
